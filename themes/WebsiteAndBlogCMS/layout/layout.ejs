@@ -1,0 +1,29 @@
+<% var pageType = getPageType() %>
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <%- partial('_partial/doc_head') %>
+
+  </head>
+  <body>
+      
+  
+    <%# -- LAYOUT FOR HOME-- #%>
+    <% if(pageType == 'home') { %>
+        
+      <%- partial('home') %>
+    
+    <%# -- LAYOUT FOR BLOG -- #%>
+    <% } else if(pageType == 'blog' || pageType == 'archives' || pageType == 'categories' || pageType == 'tags' || pageType == 'blogPost' ) {%>
+
+      <%- partial('blog') %>
+
+    <% } %>
+
+    
+    <%- partial('_partial/doc_footer') %>
+
+  </body>
+</html>
