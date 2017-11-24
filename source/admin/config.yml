@@ -10,9 +10,10 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 collections:
   - name: "nav" 
     label: "Navigation"
-    folder: "source"
+    folder: "source/data"
     fields:
-      - {label: Categories, name: menu, widget: list}
+      - {label: "Title", name: "title", widget: "hidden", default: "MENU"}
+      - {label: Menu, name: menu, widget: list}
 
   - name: "home" 
     label: "Home Page" 
