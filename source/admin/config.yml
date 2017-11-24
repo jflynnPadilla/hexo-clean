@@ -13,7 +13,7 @@ collections:
     folder: "source/data"
     fields:
       - {label: "Title", name: "title", widget: "hidden", default: "MENU"}
-      - {label: Menu, name: menu, widget: list}
+      - {label: Menu, name: menu, widget: text}
 
   - name: "home" 
     label: "Home Page" 
