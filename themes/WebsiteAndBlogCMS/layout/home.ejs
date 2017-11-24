@@ -6,9 +6,50 @@
         
         <div class="outer">
         
-            <section id="main">
+            <section id="main" style="width: 100%; margin: 0px;">
+                
+                <div class="article-inner" style=" margin: 50px 0px; padding: 20px; background:#eee">
                     <%- page.content%>
+                </div>
+                
+                <div class="article-inner" style=" margin: 50px 0px; padding: 20px; background:#eee">
+                    <% site.pages.each(function(page){ %>
+                            
+                        <%if(page.section == 'home1'){ %>
+                        
+                            <%- page.content%>  
+                        
+                        <%}%>
+                            
+                    <% }) %>
+                </div>
+
+                <div class="article-inner" style=" margin: 50px 0px; padding: 20px; background:#eee">
+                    <% site.pages.each(function(page){ %>
+                                
+                        <%if(page.section == 'home2'){ %>
+                            
+                            <%- page.content%>  
+                            
+                        <%}%>
+                                
+                    <% }) %>
+                </div>
+
+                <div class="article-inner" style=" margin: 50px 0px; padding: 20px; background:#eee">
+                    <% site.pages.each(function(page){ %>
+                                    
+                        <%if(page.section == 'home3'){ %>
+                                
+                            <%- page.content%>  
+                                
+                        <%}%>
+                                    
+                    <% }) %>
+                </div>
+
             </section>
+            
         
         </div>
     

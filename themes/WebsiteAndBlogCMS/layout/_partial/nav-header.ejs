@@ -10,13 +10,13 @@
         
         <% site.pages.each(function(page){ %>
         
-        <%if(page.title == 'MENU'){ %>
+            <%if(page.title == 'MENU'){ %>
 
-            <% for (var link in page.menu){   %>
-            <a class="main-nav-link" href="<%- page.menu[link] %>"><%- link %></a>
-            <% } %>
+                <% for(var link in page.menu){   %>
+                <a class="main-nav-link" href="<%- page.menu[link] %>"><%- link %></a>
+                <% } %>
 
-        <%}%>
+            <%}%>
         
         <% }) %>
 

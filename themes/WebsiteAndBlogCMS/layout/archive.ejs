@@ -1,1 +1,11 @@
-<%- partial('_partial/archive', {pagination: config.archive, index: true}) %>
+<% var pageType = getPageType() %>
+
+<% if(pageType == "blog"){ %>
+    
+    <%- partial('_partial/archive', {pagination: 2, index: true}) %>
+
+<% } else{ %>
+
+    <%- partial('_partial/archive', {pagination: config.archive, index: true}) %>
+    
+<% } %>
