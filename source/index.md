@@ -1,7 +1,6 @@
 ---
-title: Home
-layout: home
-date: 2017-11-21 21:43:23
+menu:
+  - test
+  - /
 ---
 
-This is the main content area
