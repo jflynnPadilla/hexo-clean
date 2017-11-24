@@ -1,6 +1,7 @@
 ---
 title: MENU
 menu:
-- [Home, /]
+- ['Home', '/']
+
 ---
 
