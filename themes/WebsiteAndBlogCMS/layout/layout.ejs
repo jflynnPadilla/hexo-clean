@@ -8,21 +8,28 @@
 
   </head>
   <body>
-      
   
-    <%# -- LAYOUT FOR HOME-- #%>
-    <% if(pageType == 'home') { %>
-        
-      <%- partial('home') %>
-    
-    <%# -- LAYOUT FOR BLOG -- #%>
-    <% } else if(pageType == 'blog' || pageType == 'archives' || pageType == 'categories' || pageType == 'tags' || pageType == 'blogPost' ) {%>
+    <%- partial('_partial/nav-header', null, {cache: !config.relative_link}) %>
 
+
+   
+    <% if(pageType == 'blog' || pageType == 'archives' || pageType == 'categories' || pageType == 'tags' || pageType == 'blogPost' ) {%>
+      
+      <%# -- LAYOUT FOR BLOG -- #%>
       <%- partial('blog') %>
+
+    <% } else { %>
+
+      <%# -- LAYOUT FOR HOME OR PAGE-- #%>
+      <%- body %>
 
     <% } %>
 
     
+    <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+
+    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
+
     <%- partial('_partial/doc_footer') %>
 
   </body>

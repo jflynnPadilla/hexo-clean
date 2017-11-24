@@ -1,5 +1,20 @@
 <nav id="mobile-nav">
+
   <% for (var i in theme.menu){ %>
     <a href="<%- url_for(theme.menu[i]) %>" class="mobile-nav-link"><%= i %></a>
   <% } %>
+
+
+  <% site.pages.each(function(page){ %>
+    
+     <%if(page.title == 'MENU'){ %>
+
+       <% for (var link in page.menu){   %>
+         <a href="<%- page.menu[link] %>" class="mobile-nav-link"><%- link %></a>
+       <% } %>
+
+     <%}%>
+    
+   <% }) %>
+
 </nav>
