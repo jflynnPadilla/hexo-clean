@@ -12,7 +12,7 @@ collections:
     label: "Navigation"
     folder: "source"
     fields:
-      - {label: "Menu", name: "menu", widget: "list"}
+      - {label: Categories, name: menu, widget: list}
 
   - name: "home" 
     label: "Home Page" 
