@@ -1,10 +1,8 @@
 ---
 title: MENU
-menu:
-- ['Home', '/']
-- ['About Us', '/about']
-- ['Contact Us', '/contact']
-- ['Blog', '/blog']
-- ['Archives', '/archives']
+menu: >-
+  List [ List [ "Home 1", "/" ], List [ "About Us", "/about" ], List [ "Contact
+  Us", "/contact" ], List [ "Blog", "/blog" ], List [ "Archives", "/archives" ]
+  ]
 ---
 
