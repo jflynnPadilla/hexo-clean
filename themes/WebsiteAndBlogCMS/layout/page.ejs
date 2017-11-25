@@ -3,14 +3,54 @@
     <div id="wrap">
                 
         <%- partial('_partial/blog-header', null, {cache: !config.relative_link}) %>
-        
-        <div class="outer">
-        
-            <section id="main">
+
+
+        <% if(page.pageType2 == 'about'){ %>
+
+            <div class="outer">
+                    
+                <div class="article-inner" style=" margin: 50px 0px; padding: 20px; background:#eee">
                     <%- page.content%>
-            </section>
-        
-        </div>
+                </div>
+
+                <div class="article-inner" style=" margin: 50px 0px; padding: 20px; background:#eee">
+                     
+                    <h3>FAQ</h3><br>
+
+                    <%
+                        var faq = [];
+                        site.pages.forEach(function(item){
+                            if(item.section == 'faq'){
+                                faq.push(item);
+                            }
+                        });
+                        faq.sort(function(a, b){
+                            return a.order > b.order
+                        });
+                    %>
+                    
+                    <% for (i = 0; i < faq.length; i++) {  var item=faq[i]; %>
+                        Q: <%- item.question %><br>
+                        A: <%- strip_html(item.content) %><br>
+                        <hr>
+                   <% }; %>
+
+
+                </div>
+                    
+            </div>
+
+        <% } else { %>
+
+            <div class="outer" style="width: 100%; margin: 0px;">
+            
+                <div class="article-inner" style=" margin: 50px 0px; padding: 20px; background:#eee">
+                    <%- page.content%>
+                </div>
+            
+            </div>
+
+        <% } %>
     
     </div>
     

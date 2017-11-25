@@ -2,8 +2,8 @@
 title: MENU
 menu:
 - ['Home', '/']
-- ['About Us', '/about']
-- ['Contact Us', '/contact']
+- ['About Us', '/page/about.html']
+- ['Contact Us', '/page/contact.html']
 - ['Blog', '/blog']
 - ['Archives', '/archives']
 ---
