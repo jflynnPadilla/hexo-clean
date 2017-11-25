@@ -21,8 +21,8 @@ collections:
     create: false
     slug: "{{slug}}" 
     fields:
-      - {label: "Title", name: "title", widget: "hidden", default: "Home"}
-      - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
+      - {label: "Title", name: "title", widget: "hidden"}
+      - {label: "Layout", name: "layout", widget: "hidden"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
 
@@ -41,7 +41,7 @@ collections:
     create: true
     slug: "{{slug}}" 
     fields:
-      - {label: "PageType", name: "pageType", widget: "hidden", default: "page"}
+      - {label: "PageType", name: "pageType", widget: "hidden"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -65,8 +65,8 @@ collections:
     create: true
     slug: "{{slug}}" 
     fields:
-      - {label: "Section", name: "section", widget: "hidden", default: "faq"}
-      - {label: "Question", name: "question", widget: "tet"}
+      - {label: "Section", name: "section", widget: "hidden"}
+      - {label: "Question", name: "question", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
   
   
