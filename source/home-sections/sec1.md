@@ -1,5 +1,5 @@
 ---
-title: home-sec
+title: sec1
 section: home1
 ---
 **Home Sub Section 1**

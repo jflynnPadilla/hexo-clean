@@ -1,5 +1,5 @@
 ---
-title: MENU2
+title: menu
 ---
 
 -[Home](/)
