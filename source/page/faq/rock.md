@@ -1,4 +1,5 @@
 ---
+title: faq
 section: faq
 question: Do you smell what the Rock is cooking?
 order: 2

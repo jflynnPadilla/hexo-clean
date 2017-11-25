@@ -1,4 +1,5 @@
 ---
+title: home-sec
 section: home2
 ---
 
