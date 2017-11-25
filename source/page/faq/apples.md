@@ -1,8 +1,8 @@
 ---
 title: faq
 section: faq
+order: '10'
 question: How do you like them apples?
-order: 1
 ---
 
 Just fine  - thanks!
