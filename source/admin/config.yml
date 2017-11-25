@@ -66,9 +66,9 @@ collections:
     create: true
     slug: "{{slug}}" 
     fields:
-      - {label: "Title", name: "title", widget: "hidden"}
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Section", name: "section", widget: "hidden"}
-      - {label: "Order", name: "order", widget: "text"}
+      - {label: "Order", name: "order", widget: "string"}
       - {label: "Question", name: "question", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
   
