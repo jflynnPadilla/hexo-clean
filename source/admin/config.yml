@@ -66,6 +66,7 @@ collections:
     slug: "{{slug}}" 
     fields:
       - {label: "Section", name: "section", widget: "hidden"}
+      - {label: "Order", name: "order", widget: "number"}
       - {label: "Question", name: "question", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
   
