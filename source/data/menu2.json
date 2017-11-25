@@ -1,0 +1,12 @@
+{
+    "menu":[
+        {
+            "label": "home",
+            "link": "/"
+        },
+        {
+            "label": "home",
+            "link": "/"
+        }
+    ]
+}

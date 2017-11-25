@@ -19,6 +19,19 @@
             <%}%>
             
         <% }) %>
+        
+        <% site.pages.each(function(page){ %>
+            
+            <%if(page.title == 'MENU'){ %>
+    
+                <% for(var link in page.menu){   %>
+                    <a class="main-nav-link" href="<%- page.menu[link][1] %>"><%- page.menu[link][0] %></a>
+                <% } %>
+    
+            <%}%>
+            
+        <% }) %>
+
 
     </nav>
     
