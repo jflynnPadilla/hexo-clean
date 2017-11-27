@@ -10,17 +10,27 @@
   
       <h1 id="logo-wrap">
         <a href="<%- url_for(config.index_generator.path) %>" id="logo">
-          
+
           <% if(pageType == 'home'){ %>
+            
             <%= config.title %>
+
           <% } else if(page.pageType2 == 'about'){ %>
+            
             About Us
+          
           <% } else if(page.pageType2 == 'news' || page.section == 'news'){ %>
+          
             News
+          
           <% } else if(page.pageType2 == 'contact' || page.pageType2 == 'contact-thank-you'){ %>
+          
             Contact Us
+          
           <% } else if(pageType == 'blog'){ %>
+          
             Blog
+          
           <% } else if(pageType == 'archives'){ %>
             
             <% 
@@ -34,11 +44,17 @@
             <% } %>
 
           <% } else if(pageType == 'blogPost'){ %>
-              Post
+          
+            Post
+          
           <% } else if(pageType == 'categories'){ %>
-                Categories: <%- page.category %>
+          
+            Categories: <%- page.category %>
+          
           <% } else if(pageType == 'tags'){ %>
-                  Tag: <%- page.tag %>
+          
+            Tag: <%- page.tag %>
+          
           <% } %>
           
         </a>
