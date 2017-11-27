@@ -1,7 +1,8 @@
 ---
 pageType: page
+pageType2: contact
 title: contact
 date: 2017-11-21 21:43:23
 ---
 
-Contact page
+Fill out the form below.

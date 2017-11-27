@@ -1,5 +1,7 @@
 <aside id="sidebar"<% if (theme.sidebar === 'bottom'){ %> class="outer"<% } %>>
   
+  <h3 class="widget-title" style="padding-top: 50px;"><a style="text-decoration: none; color: #000;" href="/archives/">View Archives</a></h3>
+
   <% theme.widgets.forEach(function(widget){ %>
     <%- partial('_widget/' + widget) %>
   <% }) %>
