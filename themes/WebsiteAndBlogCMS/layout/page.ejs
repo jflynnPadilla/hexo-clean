@@ -40,6 +40,35 @@
                     
             </div>
 
+        <% } else if(page.pageType2 == 'news'){ %>
+
+            <div class="outer">
+                    
+                <div class="article-inner" style=" margin: 50px 0px; padding: 20px; background:#eee">
+                    
+                    <%- page.content%>
+                    <br>
+                    <hr>
+                    <br>
+                    
+                    <% site.pages.sort('date', -1).each(function(page){ %>
+                        
+                        <%if(page.section == 'news'){ %>
+                            
+                            <a href="<%- url_for(page.path) %>">
+                                <img src="<%- page.thumbnail %>" width="300" style="display: block;"><br>
+                                <%- trim(page.headline) %>
+                            </a><br><br>
+                
+                        <%}%>
+                        
+                    <% }) %>
+
+
+                </div>
+                    
+            </div>
+
         <% } else { %>
 
             <div class="outer" style="width: 100%; margin: 0px;">

@@ -67,9 +67,22 @@ collections:
     slug: "{{slug}}" 
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Section", name: "section", widget: "hidden"}
+      - {label: "Section", name: "section", widget: "hidden", default: "faq"}
       - {label: "Order", name: "order", widget: "string"}
       - {label: "Question", name: "question", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "news" 
+    label: "News" 
+    folder: "source/page/news"
+    create: true
+    slug: "{{slug}}" 
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Section", name: "section", widget: "hidden", default: "news"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "headline", name: "headline", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
   
   
