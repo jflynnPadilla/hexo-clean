@@ -3,6 +3,9 @@ pageType: post
 title: samplePost
 date: 2017-11-21T15:53:16.000Z
 thumbnail: /images/uploads/html-color-codes-color-tutorials-hero-00e10b1f.jpg
+photos:
+- /images/uploads/html-color-codes-color-tutorials-hero-00e10b1f.jpg
+- /images/uploads/banner.jpg
 rating: '3'
 tags:
   - tag1
