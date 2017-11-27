@@ -74,7 +74,9 @@ $logo-text
 #main-nav
   float: left
   margin-left: -15px
-  width: 500px
+  width: 400px
+  @media mq-mobile
+    width: auto
 
 $nav-link
   float: left
@@ -84,7 +86,7 @@ $nav-link
   text-shadow: 0 1px rgba(0, 0, 0, 0.2)
   transition: opacity 0.2s
   display: block
-  padding: 20px 15px
+  padding: 20px 10px
   &:hover
     opacity: 1
 
@@ -95,7 +97,7 @@ $nav-link
   font-size: font-size
   width: font-size
   height: font-size
-  padding: 20px 15px
+  padding: 25px 15px
   position: relative
   cursor: pointer
 

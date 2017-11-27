@@ -7,14 +7,32 @@
 
   <% site.pages.each(function(page){ %>
     
-     <%if(page.title == 'menuOLD'){ %>
+     <%if(page.title == 'menuXXXX'){ %>
 
        <% for (var link in page.menu){   %>
-         <a href="<%- page.menu[link] %>" class="mobile-nav-link"><%- link %></a>
-       <% } %>
+         
+        <a href="<%- page.menu[link] %>" class="mobile-nav-link"><%- link %></a>
+       
+        <% } %>
 
      <%}%>
     
    <% }) %>
+
+   <% site.pages.each(function(page){ %>
+    
+    <%if(page.title == 'menu'){ %>
+
+        <% for(var link in page.menu){   %>
+            
+            <% var parseLinksArr = page.menu[link].split("-") %>
+
+            <a class="mobile-nav-link" href="<%- parseLinksArr[1] %>"><%- parseLinksArr[0] %></a>
+
+        <% } %>
+
+    <%}%>
+    
+  <% }) %>
 
 </nav>

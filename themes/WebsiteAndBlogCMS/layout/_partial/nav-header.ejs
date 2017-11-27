@@ -36,7 +36,7 @@
     
                 <% for(var link in page.menu){   %>
                     
-                    <% var parseLinksArr = page.menu[link].split(",") %>
+                    <% var parseLinksArr = page.menu[link].split("-") %>
 
                     <a class="main-nav-link" href="<%- parseLinksArr[1] %>"><%- parseLinksArr[0] %></a>
 
