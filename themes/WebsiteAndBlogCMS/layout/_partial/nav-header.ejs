@@ -10,7 +10,7 @@
         
         <% site.pages.each(function(page){ %>
             
-            <%if(page.title == 'menuOLD'){ %>
+            <%if(page.title == 'menuOLDXXXX'){ %>
     
                 <% for(var link in page.menu){   %>
                     <a class="main-nav-link" href="<%- page.menu[link][1] %>"><%- page.menu[link][0] %></a>
@@ -25,6 +25,22 @@
             <%if(page.title == 'menuXXXX'){ %>
                 
                 <%- page.content %>
+    
+            <%}%>
+            
+        <% }) %>
+
+        <% site.pages.each(function(page){ %>
+            
+            <%if(page.title == 'menu'){ %>
+    
+                <% for(var link in page.menu){   %>
+                    
+                    <% var parseLinksArr = page.menu[link].split(",") %>
+
+                    <a class="main-nav-link" href="<%- parseLinksArr[1] %>"><%- parseLinksArr[0] %></a>
+
+                <% } %>
     
             <%}%>
             
