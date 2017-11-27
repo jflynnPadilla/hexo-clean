@@ -1,15 +1,10 @@
 ---
 title: menu
 menu:
-  - Home
-  - /
-  - About Us
-  - /page/about.html
-  - News
-  - /page/news.html
-  - Contact Us
-  - /page/contact.html
-  - My Blog
-  - /blog
+  - Home - /
+  - About Us - /page/about.html
+  - News - /page/news.html
+  - Contact Us - /page/contact.html
+  - My Blog - /blog
 ---
 
